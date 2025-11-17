@@ -9,6 +9,8 @@ import feedparser
 
 BASE_URL = "http://export.arxiv.org/api/query"
 
+SEEN_FILE = Path("seen_papers.txt")
+
 # buckets aligned to blume-related topics
 QUERIES = {
     "ner_extraction": [
@@ -201,10 +203,23 @@ def main():
     now = datetime.now(timezone.utc)
     since = now - timedelta(days=LOOKBACK_DAYS)
 
+    if SEEN_FILE.exists():
+        seen_global = set(SEEN_FILE.read_text(encoding="utf-8").splitlines())
+    else:
+        seen_global = set()
+
     all_papers = []
+    new_ids = set()
+
     for bucket, qs in QUERIES.items():
         papers = fetch_bucket(bucket, qs, since)
-        all_papers.extend(papers)
+        filtered = [p for p in papers if p["id"] not in seen_global]
+        all_papers.extend(filtered)
+        new_ids.update(p["id"] for p in filtered)
+
+    if new_ids:
+        updated = seen_global | new_ids
+        SEEN_FILE.write_text("\n".join(sorted(updated)), encoding="utf-8")
 
     out_dir = Path("daily_papers")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -216,7 +231,7 @@ def main():
     latest_path = Path("LATEST_PAPERS.md")
     latest_path.write_text(md, encoding="utf-8")
 
-    print(f"wrote {out_file} with {len(all_papers)} papers")
+    print(f"wrote {out_file} with {len(all_papers)} new papers")
     if all_papers:
         print("buckets:", ", ".join(sorted({p["bucket"] for p in all_papers})))
 
