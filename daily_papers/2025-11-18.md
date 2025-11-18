@@ -1,39 +1,32 @@
 # ML paper digest for 2025-11-18
 
-_window: last 1 days; generated at 2025-11-18T03:11:24.798037+00:00_
+_window: last 1 days; generated at 2025-11-18T10:08:54.691158+00:00_
 
 ## Top picks for Blume
 
-- [BeDiscovER: The Benchmark of Discourse Understanding in the Era of Reasoning Language Models](https://arxiv.org/abs/2511.13095v1) (score=4, bucket=entity_linking_graph, 2025-11-17)
-- [Global Cross-Time Attention Fusion for Enhanced Solar Flare Prediction from Multivariate Time Series](https://arxiv.org/abs/2511.12955v1) (score=3, bucket=ner_extraction, 2025-11-17)
+- [Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents](https://arxiv.org/abs/2511.13593v1) (score=3, bucket=entity_linking_graph, 2025-11-17)
 - [Graph Out-of-Distribution Detection via Test-Time Calibration with Dual Dynamic Dictionaries](https://arxiv.org/abs/2511.13541v1) (score=3, bucket=entity_linking_graph, 2025-11-17)
 - [A Quantum Tensor Network-Based Viewpoint for Modeling and Analysis of Time Series Data](https://arxiv.org/abs/2511.13514v1) (score=3, bucket=entity_linking_graph, 2025-11-17)
 - [Mem-PAL: Towards Memory-based Personalized Dialogue Assistants for Long-term User-Agent Interaction](https://arxiv.org/abs/2511.13410v1) (score=2, bucket=retrieval_rag, 2025-11-17)
-- [RAGPulse: An Open-Source RAG Workload Trace to Optimize RAG Serving Systems](https://arxiv.org/abs/2511.12979v1) (score=2, bucket=retrieval_rag, 2025-11-17)
+- [Weight-sparse transformers have interpretable circuits](https://arxiv.org/abs/2511.13653v1) (score=1, bucket=domain_adaptation, 2025-11-17)
 - [Likelihood-guided Regularization in Attention Based Models](https://arxiv.org/abs/2511.13221v1) (score=1, bucket=domain_adaptation, 2025-11-17)
-- [ParaDySe: A Parallel-Strategy Switching Framework for Dynamic Sequence Lengths in Transformer](https://arxiv.org/abs/2511.13198v1) (score=1, bucket=domain_adaptation, 2025-11-17)
-- [Soft Conflict-Resolution Decision Transformer for Offline Multi-Task Reinforcement Learning](https://arxiv.org/abs/2511.13133v1) (score=1, bucket=domain_adaptation, 2025-11-17)
-- [Transformer-Based Scalable Multi-Agent Reinforcement Learning for Networked Systems with Long-Range Interactions](https://arxiv.org/abs/2511.13103v1) (score=1, bucket=domain_adaptation, 2025-11-17)
-
-## Ner Extraction
-
-### [Global Cross-Time Attention Fusion for Enhanced Solar Flare Prediction from Multivariate Time Series](https://arxiv.org/abs/2511.12955v1)
-- id: `http://arxiv.org/abs/2511.12955v1`
-- published: 2025-11-17
-- authors: Onur Vural, Shah Muhammad Hamdi, Soukaina Filali Boubrahimi
-- categories: cs.LG, cs.AI
-- query: `all:"token classification"`
-- blume_score: 3
-
-Multivariate time series classification is increasingly investigated in space weather research as a
-means to predict intense solar flare events, which can cause widespread disruptions across modern
-technological systems. Magnetic field measurements of solar active regions are converted into
-structured multivariate time series, enabling predictive modeling across segmented observation
-windows. However, the inherently imbalanced nature of solar flare occurrences, where intense flares
-are rare c...
-
 
 ## Entity Linking Graph
+
+### [Omni Memory System for Personalized, Long Horizon, Self-Evolving Agents](https://arxiv.org/abs/2511.13593v1)
+- id: `http://arxiv.org/abs/2511.13593v1`
+- published: 2025-11-17
+- authors: Piaohong Wang, Motong Tian, Jiaxian Li, Yuan Liang, Yuqing Wang, Qianben Chen, Tiannan Wang, Zhicong Lu, Jiawei Ma, Yuchen Eleanor Jiang, Wangchunshu Zhou
+- categories: cs.CL
+- query: `all:"relation extraction"`
+- blume_score: 3
+
+Recent advancements in LLM-powered agents have demonstrated significant potential in generating
+human-like responses; however, they continue to face challenges in maintaining long-term
+interactions within complex environments, primarily due to limitations in contextual consistency and
+dynamic personalization. Existing memory systems often depend on semantic grouping prior to
+retrieval, which can overlook semantically irrelevant yet critical user information and introduce
+retrieval noise. In t...
 
 ### [Graph Out-of-Distribution Detection via Test-Time Calibration with Dual Dynamic Dictionaries](https://arxiv.org/abs/2511.13541v1)
 - id: `http://arxiv.org/abs/2511.13541v1`
@@ -65,23 +58,23 @@ models, though interpretable, often suffer from a significant performance gap wh
 neural networks. To address this, we propose a novel quantum physics-based ``white box'' method that
 offers both accurate...
 
-### [BeDiscovER: The Benchmark of Discourse Understanding in the Era of Reasoning Language Models](https://arxiv.org/abs/2511.13095v1)
-- id: `http://arxiv.org/abs/2511.13095v1`
-- published: 2025-11-17
-- authors: Chuyuan Li, Giuseppe Carenini
-- categories: cs.CL
-- query: `all:"relation extraction"`
-- blume_score: 4
-
-We introduce BeDiscovER (Benchmark of Discourse Understanding in the Era of Reasoning Language
-Models), an up-to-date, comprehensive suite for evaluating the discourse-level knowledge of modern
-LLMs. BeDiscovER compiles 5 publicly available discourse tasks across discourse lexicon,
-(multi-)sentential, and documental levels, with in total 52 individual datasets. It covers both
-extensively studied tasks such as discourse parsing and temporal relation extraction, as well as
-some novel challenges...
-
 
 ## Domain Adaptation
+
+### [Weight-sparse transformers have interpretable circuits](https://arxiv.org/abs/2511.13653v1)
+- id: `http://arxiv.org/abs/2511.13653v1`
+- published: 2025-11-17
+- authors: Leo Gao, Achyuta Rajaram, Jacob Coxon, Soham V. Govande, Bowen Baker, Dan Mossing
+- categories: cs.LG, cs.AI
+- query: `all:"adapter" AND all:"transformer"`
+- blume_score: 1
+
+Finding human-understandable circuits in language models is a central goal of the field of
+mechanistic interpretability. We train models to have more understandable circuits by constraining
+most of their weights to be zeros, so that each neuron only has a few connections. To recover fine-
+grained circuits underlying each of several hand-crafted tasks, we prune the models to isolate the
+part responsible for the task. These circuits often contain neurons and residual channels that
+correspond to ...
 
 ### [Likelihood-guided Regularization in Attention Based Models](https://arxiv.org/abs/2511.13221v1)
 - id: `http://arxiv.org/abs/2511.13221v1`
@@ -97,66 +90,6 @@ data and careful regularization to prevent overfitting. In this paper, we intro-
 likelihood-guided variational Ising-based regularization framework for Vision Transformers (ViTs),
 which simultaneously enhances model generalization and dynamically prunes redundant parameters. The
 proposed...
-
-### [ParaDySe: A Parallel-Strategy Switching Framework for Dynamic Sequence Lengths in Transformer](https://arxiv.org/abs/2511.13198v1)
-- id: `http://arxiv.org/abs/2511.13198v1`
-- published: 2025-11-17
-- authors: Zhixin Ou, Peng Liang, Jianchen Han, Baihui Liu, Linbo Qiao
-- categories: cs.LG, cs.AI
-- query: `all:"adapter" AND all:"transformer"`
-- blume_score: 1
-
-Dynamic sequences with varying lengths have been widely used in the training of Transformer-based
-large language models (LLMs). However, current training frameworks adopt a pre-defined static
-parallel strategy for these sequences, causing neither communication-parallelization cancellation on
-short sequences nor out-of-memory on long sequences. To mitigate these issues, we propose ParaDySe,
-a novel adaptive Parallel strategy switching framework for Dynamic Sequences. ParaDySe enables on-
-the-fl...
-
-### [Soft Conflict-Resolution Decision Transformer for Offline Multi-Task Reinforcement Learning](https://arxiv.org/abs/2511.13133v1)
-- id: `http://arxiv.org/abs/2511.13133v1`
-- published: 2025-11-17
-- authors: Shudong Wang, Xinfei Wang, Chenhao Zhang, Shanchen Pang, Haiyuan Gui, Wenhao Ji, Xiaojian Liao
-- categories: cs.LG, cs.AI
-- query: `all:"adapter" AND all:"transformer"`
-- blume_score: 1
-
-Multi-task reinforcement learning (MTRL) seeks to learn a unified policy for diverse tasks, but
-often suffers from gradient conflicts across tasks. Existing masking-based methods attempt to
-mitigate such conflicts by assigning task-specific parameter masks. However, our empirical study
-shows that coarse-grained binary masks have the problem of over-suppressing key conflicting
-parameters, hindering knowledge sharing across tasks. Moreover, different tasks exhibit varying
-conflict levels, yet e...
-
-### [Transformer-Based Scalable Multi-Agent Reinforcement Learning for Networked Systems with Long-Range Interactions](https://arxiv.org/abs/2511.13103v1)
-- id: `http://arxiv.org/abs/2511.13103v1`
-- published: 2025-11-17
-- authors: Vidur Sinha, Muhammed Ustaomeroglu, Guannan Qu
-- categories: cs.LG, cs.MA, eess.SY
-- query: `all:"adapter" AND all:"transformer"`
-- blume_score: 1
-
-Multi-agent reinforcement learning (MARL) has shown promise for large-scale network control, yet
-existing methods face two major limitations. First, they typically rely on assumptions leading to
-decay properties of local agent interactions, limiting their ability to capture long-range
-dependencies such as cascading power failures or epidemic outbreaks. Second, most approaches lack
-generalizability across network topologies, requiring retraining when applied to new graphs. We
-introduce STACCA ...
-
-### [Are Graph Transformers Necessary? Efficient Long-Range Message Passing with Fractal Nodes in MPNNs](https://arxiv.org/abs/2511.13010v1)
-- id: `http://arxiv.org/abs/2511.13010v1`
-- published: 2025-11-17
-- authors: Jeongwhan Choi, Seungjun Park, Sumin Park, Sung-Bae Cho, Noseong Park
-- categories: cs.LG, cs.AI
-- query: `all:"adapter" AND all:"transformer"`
-- blume_score: 1
-
-Graph Neural Networks (GNNs) have emerged as powerful tools for learning on graph-structured data,
-but often struggle to balance local and global information. While graph Transformers aim to address
-this by enabling long-range interactions, they often overlook the inherent locality and efficiency
-of Message Passing Neural Networks (MPNNs). We propose a new concept called fractal nodes, inspired
-by the fractal structure observed in real-world networks. Our approach is based on the intuition
-th...
 
 
 ## Retrieval Rag
@@ -175,34 +108,4 @@ understand user-specific traits to accurately interpret requirements and tailor 
 individual preferences. However, existing approaches often overlook the complexities of long-term
 interactions and fail to capture users' subjective characteristics. To address these gaps, we
 present PAL-Benc...
-
-### [Region-Point Joint Representation for Effective Trajectory Similarity Learning](https://arxiv.org/abs/2511.13125v1)
-- id: `http://arxiv.org/abs/2511.13125v1`
-- published: 2025-11-17
-- authors: Hao Long, Silin Zhou, Lisi Chen, Shuo Shang
-- categories: cs.CV, cs.IR, cs.LG
-- query: `all:"dense retrieval"`
-- blume_score: 1
-
-Recent learning-based methods have reduced the computational complexity of traditional trajectory
-similarity computation, but state-of-the-art (SOTA) methods still fail to leverage the comprehensive
-spectrum of trajectory information for similarity modeling. To tackle this problem, we propose
-\textbf{RePo}, a novel method that jointly encodes \textbf{Re}gion-wise and \textbf{Po}int-wise
-features to capture both spatial context and fine-grained moving patterns. For region-wise
-representation, ...
-
-### [RAGPulse: An Open-Source RAG Workload Trace to Optimize RAG Serving Systems](https://arxiv.org/abs/2511.12979v1)
-- id: `http://arxiv.org/abs/2511.12979v1`
-- published: 2025-11-17
-- authors: Zhengchao Wang, Yitao Hu, Jianing Ye, Zhuxuan Chang, Jiazheng Yu, Youpeng Deng, Keqiu Li
-- categories: cs.LG, cs.DB
-- query: `all:"retrieval augmented generation"`
-- blume_score: 2
-
-Retrieval-Augmented Generation (RAG) is a critical paradigm for building reliable, knowledge-
-intensive Large Language Model (LLM) applications. However, the multi-stage pipeline (retrieve,
-generate) and unique workload characteristics (e.g., knowledge dependency) of RAG systems pose
-significant challenges for serving performance optimization. Existing generic LLM inference traces
-fail to capture these RAG-specific dynamics, creating a significant performance gap between academic
-research and ...
 
