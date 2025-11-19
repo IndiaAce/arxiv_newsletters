@@ -1,19 +1,16 @@
 # ML paper digest for 2025-11-19
 
-_window: last 1 days; generated at 2025-11-19T04:09:47.397464+00:00_
+_window: last 1 days; generated at 2025-11-19T10:08:20.326051+00:00_
 
 ## Top picks for Blume
 
-- [Applying Relation Extraction and Graph Matching to Answering Multiple Choice Questions](https://arxiv.org/abs/2511.14144v1) (score=5, bucket=entity_linking_graph, 2025-11-18)
 - [Ground Truth Generation for Multilingual Historical NLP using LLMs](https://arxiv.org/abs/2511.14688v1) (score=4, bucket=ner_extraction, 2025-11-18)
-- [Harnessing Deep LLM Participation for Robust Entity Linking](https://arxiv.org/abs/2511.14181v1) (score=4, bucket=entity_linking_graph, 2025-11-18)
-- [AfriSpeech-MultiBench: A Verticalized Multidomain Multicountry Benchmark Suite for African Accented English ASR](https://arxiv.org/abs/2511.14255v1) (score=3, bucket=ner_extraction, 2025-11-18)
-- [Examining the Metrics for Document-Level Claim Extraction in Czech and Slovak](https://arxiv.org/abs/2511.14566v1) (score=3, bucket=entity_linking_graph, 2025-11-18)
-- [Towards Authentic Movie Dubbing with Retrieve-Augmented Director-Actor Interaction Learning](https://arxiv.org/abs/2511.14249v1) (score=3, bucket=entity_linking_graph, 2025-11-18)
-- [Streamlining Industrial Contract Management with Retrieval-Augmented LLMs](https://arxiv.org/abs/2511.14671v1) (score=2, bucket=retrieval_rag, 2025-11-18)
-- [LiveRAG: A diverse Q&A dataset with varying difficulty level for RAG evaluation](https://arxiv.org/abs/2511.14531v1) (score=2, bucket=retrieval_rag, 2025-11-18)
-- [Tell Me: An LLM-powered Mental Well-being Assistant with RAG, Synthetic Dialogue Generation, and Agentic Planning](https://arxiv.org/abs/2511.14445v1) (score=2, bucket=retrieval_rag, 2025-11-18)
-- [SciRAG: Adaptive, Citation-Aware, and Outline-Guided Retrieval and Synthesis for Scientific Literature](https://arxiv.org/abs/2511.14362v1) (score=2, bucket=retrieval_rag, 2025-11-18)
+- [AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Training](https://arxiv.org/abs/2511.14721v1) (score=1, bucket=domain_adaptation, 2025-11-18)
+- [\textit{FLARE}: Adaptive Multi-Dimensional Reputation for Robust Client Reliability in Federated Learning](https://arxiv.org/abs/2511.14715v1) (score=1, bucket=domain_adaptation, 2025-11-18)
+- [Strategic Innovation Management in the Age of Large Language Models Market Intelligence, Adaptive R&D, and Ethical Governance](https://arxiv.org/abs/2511.14709v1) (score=1, bucket=domain_adaptation, 2025-11-18)
+- [Adapformer: Adaptive Channel Management for Multivariate Time Series Forecasting](https://arxiv.org/abs/2511.14632v1) (score=1, bucket=domain_adaptation, 2025-11-18)
+- [ForensicFlow: A Tri-Modal Adaptive Network for Robust Deepfake Detection](https://arxiv.org/abs/2511.14554v1) (score=1, bucket=domain_adaptation, 2025-11-18)
+- [nnterp: A Standardized Interface for Mechanistic Interpretability of Transformers](https://arxiv.org/abs/2511.14465v1) (score=1, bucket=domain_adaptation, 2025-11-18)
 
 ## Ner Extraction
 
@@ -31,84 +28,6 @@ models (LLMs) to create ground-truth annotations for historical French (16th-20t
 Chinese (1900-1950) texts. By leveraging LLM-generated ground truth on a subset of our corpus, we
 were able to fine-tune spaCy to achieve significant gains on period-specific tests for part-of-
 speech (POS) ann...
-
-### [AfriSpeech-MultiBench: A Verticalized Multidomain Multicountry Benchmark Suite for African Accented English ASR](https://arxiv.org/abs/2511.14255v1)
-- id: `http://arxiv.org/abs/2511.14255v1`
-- published: 2025-11-18
-- authors: Gabrial Zencha Ashungafac, Mardhiyah Sanni, Busayo Awobade, Alex Gichamba, Tobi Olatunji
-- categories: cs.CL
-- query: `all:"named entity recognition"`
-- blume_score: 3
-
-Recent advances in speech-enabled AI, including Google's NotebookLM and OpenAI's speech-to-speech
-API, are driving widespread interest in voice interfaces globally. Despite this momentum, there
-exists no publicly available application-specific model evaluation that caters to Africa's
-linguistic diversity. We present AfriSpeech-MultiBench, the first domain-specific evaluation suite
-for over 100 African English accents across 10+ countries and seven application domains: Finance,
-Legal, Medical,...
-
-
-## Entity Linking Graph
-
-### [Examining the Metrics for Document-Level Claim Extraction in Czech and Slovak](https://arxiv.org/abs/2511.14566v1)
-- id: `http://arxiv.org/abs/2511.14566v1`
-- published: 2025-11-18
-- authors: Lucia Makaiová, Martin Fajčík, Antonín Jarolím
-- categories: cs.CL, cs.AI
-- query: `all:"relation extraction"`
-- blume_score: 3
-
-Document-level claim extraction remains an open challenge in the field of fact-checking, and
-subsequently, methods for evaluating extracted claims have received limited attention. In this work,
-we explore approaches to aligning two sets of claims pertaining to the same source document and
-computing their similarity through an alignment score. We investigate techniques to identify the
-best possible alignment and evaluation method between claim sets, with the aim of providing a
-reliable evaluat...
-
-### [Towards Authentic Movie Dubbing with Retrieve-Augmented Director-Actor Interaction Learning](https://arxiv.org/abs/2511.14249v1)
-- id: `http://arxiv.org/abs/2511.14249v1`
-- published: 2025-11-18
-- authors: Rui Liu, Yuan Zhao, Zhenqi Jia
-- categories: cs.CL
-- query: `all:"knowledge graph" AND all:"construction"`
-- blume_score: 3
-
-The automatic movie dubbing model generates vivid speech from given scripts, replicating a speaker's
-timbre from a brief timbre prompt while ensuring lip-sync with the silent video. Existing approaches
-simulate a simplified workflow where actors dub directly without preparation, overlooking the
-critical director-actor interaction. In contrast, authentic workflows involve a dynamic
-collaboration: directors actively engage with actors, guiding them to internalize the context cues,
-specifically ...
-
-### [Harnessing Deep LLM Participation for Robust Entity Linking](https://arxiv.org/abs/2511.14181v1)
-- id: `http://arxiv.org/abs/2511.14181v1`
-- published: 2025-11-18
-- authors: Jiajun Hou, Chenyu Zhang, Rui Meng
-- categories: cs.CL
-- query: `all:"entity linking"`
-- blume_score: 4
-
-Entity Linking (EL), the task of mapping textual entity mentions to their corresponding entries in
-knowledge bases, constitutes a fundamental component of natural language understanding. Recent
-advancements in Large Language Models (LLMs) have demonstrated remarkable potential for enhancing EL
-performance. Prior research has leveraged LLMs to improve entity disambiguation and input
-representation, yielding significant gains in accuracy and robustness. However, these approaches
-typically apply...
-
-### [Applying Relation Extraction and Graph Matching to Answering Multiple Choice Questions](https://arxiv.org/abs/2511.14144v1)
-- id: `http://arxiv.org/abs/2511.14144v1`
-- published: 2025-11-18
-- authors: Naoki Shimoda, Akihiro Yamamoto
-- categories: cs.CL, cs.IR
-- query: `all:"entity linking"`
-- blume_score: 5
-
-In this research, we combine Transformer-based relation extraction with matching of knowledge graphs
-(KGs) and apply them to answering multiple-choice questions (MCQs) while maintaining the
-traceability of the output process. KGs are structured representations of factual knowledge
-consisting of entities and relations. Due to the high construction cost, they had been regarded as
-static databases with validated links. However, the recent development of Transformer-based relation
-extraction (RE)...
 
 
 ## Domain Adaptation
@@ -202,112 +121,4 @@ like TransformerLens ensure consistent interfaces but require coding a manual ad
 architecture, introducing numerical mismatch with the original models, while direct HuggingFace
 access through NNsight preserves exact behavior but lacks standardization across models. To bridge
 this ...
-
-
-## Retrieval Rag
-
-### [Streamlining Industrial Contract Management with Retrieval-Augmented LLMs](https://arxiv.org/abs/2511.14671v1)
-- id: `http://arxiv.org/abs/2511.14671v1`
-- published: 2025-11-18
-- authors: Kristi Topollai, Tolga Dimlioglu, Anna Choromanska, Simon Odie, Reginald Hui
-- categories: cs.CL
-- query: `all:"retrieval augmented generation"`
-- blume_score: 2
-
-Contract management involves reviewing and negotiating provisions, individual clauses that define
-rights, obligations, and terms of agreement. During this process, revisions to provisions are
-proposed and iteratively refined, some of which may be problematic or unacceptable. Automating this
-workflow is challenging due to the scarcity of labeled data and the abundance of unstructured legacy
-contracts. In this paper, we present a modular framework designed to streamline contract management
-thro...
-
-### [A Specialized Large Language Model for Clinical Reasoning and Diagnosis in Rare Diseases](https://arxiv.org/abs/2511.14638v1)
-- id: `http://arxiv.org/abs/2511.14638v1`
-- published: 2025-11-18
-- authors: Tao Yang, Dandan Huang, Yunting Lin, Pengfei Wu, Zhikun Wu, Gangyuan Ma, Yulan Lu, Xinran Dong, Dingpeng Li, Junshuang Ge, Zhiyan Zhang, Xuanzhao Huang, Wenyan Nong, Yao Zhou, Hui Tang, Hongxi Yang, Shijie Zhang, Juan Li, Xiaojun Cao, Lin Yang, Xia Gao, Kaishou Xu, Xiaoqiong Gu, Wen Zhang, Huimin Xia, Li Liu, Wenhao Zhou, Mulin Jun Li
-- categories: cs.CL
-- query: `all:"retrieval augmented generation"`
-- blume_score: 1
-
-Rare diseases affect hundreds of millions worldwide, yet diagnosis often spans years. Convectional
-pipelines decouple noisy evidence extraction from downstream inferential diagnosis, and
-general/medical large language models (LLMs) face scarce real world electronic health records
-(EHRs), stale domain knowledge, and hallucinations. We assemble a large, domain specialized clinical
-corpus and a clinician validated reasoning set, and develop RareSeek R1 via staged instruction
-tuning, chain of tho...
-
-### [LiveRAG: A diverse Q&A dataset with varying difficulty level for RAG evaluation](https://arxiv.org/abs/2511.14531v1)
-- id: `http://arxiv.org/abs/2511.14531v1`
-- published: 2025-11-18
-- authors: David Carmel, Simone Filice, Guy Horowitz, Yoelle Maarek, Alex Shtoff, Oren Somekh, Ran Tavory
-- categories: cs.CL, cs.IR
-- query: `all:"retrieval augmented generation"`
-- blume_score: 2
-
-With Retrieval Augmented Generation (RAG) becoming more and more prominent in generative AI
-solutions, there is an emerging need for systematically evaluating their effectiveness. We introduce
-the LiveRAG benchmark, a publicly available dataset of 895 synthetic questions and answers designed
-to support systematic evaluation of RAG-based Q&A systems. This synthetic benchmark is derived from
-the one used during the SIGIR'2025 LiveRAG Challenge, where competitors were evaluated under strict
-time...
-
-### [Gradient-Based Join Ordering](https://arxiv.org/abs/2511.14482v1)
-- id: `http://arxiv.org/abs/2511.14482v1`
-- published: 2025-11-18
-- authors: Tim Schwabe, Maribel Acosta
-- categories: cs.DB, cs.LG
-- query: `all:"neural search"`
-- blume_score: 1
-
-Join ordering is the NP-hard problem of selecting the most efficient sequence in which to evaluate
-joins (conjunctive, binary operators) in a database query. As the performance of query execution
-critically depends on this choice, join ordering lies at the core of query optimization. Traditional
-approaches cast this problem as a discrete combinatorial search over binary trees guided by a cost
-model, but they often suffer from high computational complexity and limited scalability. We show
-that...
-
-### [Tell Me: An LLM-powered Mental Well-being Assistant with RAG, Synthetic Dialogue Generation, and Agentic Planning](https://arxiv.org/abs/2511.14445v1)
-- id: `http://arxiv.org/abs/2511.14445v1`
-- published: 2025-11-18
-- authors: Trishala Jayesh Ahalpara
-- categories: cs.CL, cs.AI, cs.HC, cs.LG
-- query: `all:"retrieval augmented generation"`
-- blume_score: 2
-
-We present Tell Me, a mental well-being system that leverages advances in large language models to
-provide accessible, context-aware support for users and researchers. The system integrates three
-components: (i) a retrieval-augmented generation (RAG) assistant for personalized, knowledge-
-grounded dialogue; (ii) a synthetic client-therapist dialogue generator conditioned on client
-profiles to facilitate research on therapeutic language and data augmentation; and (iii) a Well-
-being AI crew, imp...
-
-### [SciRAG: Adaptive, Citation-Aware, and Outline-Guided Retrieval and Synthesis for Scientific Literature](https://arxiv.org/abs/2511.14362v1)
-- id: `http://arxiv.org/abs/2511.14362v1`
-- published: 2025-11-18
-- authors: Hang Ding, Yilun Zhao, Tiansheng Hu, Manasi Patwardhan, Arman Cohan
-- categories: cs.DL, cs.CL
-- query: `all:"retrieval augmented generation"`
-- blume_score: 2
-
-The accelerating growth of scientific publications has intensified the need for scalable,
-trustworthy systems to synthesize knowledge across diverse literature. While recent retrieval-
-augmented generation (RAG) methods have improved access to scientific information, they often
-overlook citation graph structure, adapt poorly to complex queries, and yield fragmented, hard-to-
-verify syntheses. We introduce SciRAG, an open-source framework for scientific literature
-exploration that addresses thes...
-
-### [Towards Authentic Movie Dubbing with Retrieve-Augmented Director-Actor Interaction Learning](https://arxiv.org/abs/2511.14249v1)
-- id: `http://arxiv.org/abs/2511.14249v1`
-- published: 2025-11-18
-- authors: Rui Liu, Yuan Zhao, Zhenqi Jia
-- categories: cs.CL
-- query: `all:"retrieval augmented generation"`
-- blume_score: 1
-
-The automatic movie dubbing model generates vivid speech from given scripts, replicating a speaker's
-timbre from a brief timbre prompt while ensuring lip-sync with the silent video. Existing approaches
-simulate a simplified workflow where actors dub directly without preparation, overlooking the
-critical director-actor interaction. In contrast, authentic workflows involve a dynamic
-collaboration: directors actively engage with actors, guiding them to internalize the context cues,
-specifically ...
 
