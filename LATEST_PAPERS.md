@@ -1,3 +1,3 @@
-# ML paper digest for 2026-10-12
+# ML paper digest for 2026-10-13
 
 _no new papers in the last window._
