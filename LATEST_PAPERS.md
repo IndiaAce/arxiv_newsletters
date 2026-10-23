@@ -1,97 +1,76 @@
-# ML paper digest for 2026-10-22
+# ML paper digest for 2026-10-23
 
-_window: last 1 days; generated at 2026-10-22T14:56:43.434725+00:00_
+_window: last 1 days; generated at 2026-10-23T14:45:19.743258+00:00_
 
 ## Top picks for Blume
 
-- [Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation](https://arxiv.org/abs/2610.29933v1) (score=5, bucket=entity_linking_graph, 2026-10-21)
-- [GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation](https://arxiv.org/abs/2610.30067v1) (score=4, bucket=ner_extraction, 2026-10-21)
-- [Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation](https://arxiv.org/abs/2610.29933v1) (score=3, bucket=retrieval_rag, 2026-10-21)
-- [Code Comprehensor: Hierarchical Documentation and Cross-Modal Retrieval for Large Repositories](https://arxiv.org/abs/2610.30016v1) (score=2, bucket=retrieval_rag, 2026-10-21)
-- [How Do DiTs Denoise? An Aggregator-Predictor View of Attention and MLPs](https://arxiv.org/abs/2610.29854v1) (score=1, bucket=domain_adaptation, 2026-10-21)
-
-## Ner Extraction
-
-### [GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation](https://arxiv.org/abs/2610.30067v1)
-- id: `http://arxiv.org/abs/2610.30067v1`
-- published: 2026-10-21
-- authors: Quang Anh Kiet Tran, Nam Anh Tran, Manh Hung Trinh, Thanh Danh Le, Khang Nhat Hoang Vo, Huynh Dai Nhan Tran
-- categories: cs.CL
-- query: `all:"named entity recognition"`
-- blume_score: 4
-
-Vietnamese pre-trained encoders have improved rapidly, but the strongest ones are large,
-multilingual-vocabulary models or depend on external word segmentation, which makes them costly to
-deploy. We present GoiBERT, a family of two compact Vietnamese encoders with 26M and 49M parameters
-that operate directly on raw text. GoiBERT learns from two complementary teachers. A same-tokenizer
-Vietnamese encoder first teaches general-purpose representations. A much larger teacher then
-provides task-le...
-
-
-## Entity Linking Graph
-
-### [Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation](https://arxiv.org/abs/2610.29933v1)
-- id: `http://arxiv.org/abs/2610.29933v1`
-- published: 2026-10-21
-- authors: Yufeng Li, Zaijing Li, Fuchen Zhang, Zongzong Wu, Ming Zhao, Fengxiao Tang
-- categories: cs.CL, cs.AI
-- query: `all:"knowledge graph" AND all:"construction"`
-- blume_score: 5
-
-Retrieval-augmented generation (RAG) frequently integrates knowledge graphs (KGs) for complex multi-
-hop question answering. However, their performance is increasingly bottlenecked by the knowledge
-structuring and reasoning processes. (i) Severe semantic loss: Distilling continuous texts into
-discrete symbols strips away contextual nuances and narrative coherence. (ii) Pronounced modality
-mismatch: Fragmented graph structures clash with the continuous texts LLMs are pre-trained on, while
-rewri...
-
+- [How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions](https://arxiv.org/abs/2610.31606v1) (score=2, bucket=retrieval_rag, 2026-10-22)
+- [From Structured Records to Patient Narratives: Preserving Clinical Alignment in LLM-Generated Health Summaries](https://arxiv.org/abs/2610.31467v1) (score=2, bucket=retrieval_rag, 2026-10-22)
+- [SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing](https://arxiv.org/abs/2610.31659v1) (score=1, bucket=domain_adaptation, 2026-10-22)
+- [METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning](https://arxiv.org/abs/2610.31656v1) (score=1, bucket=domain_adaptation, 2026-10-22)
 
 ## Domain Adaptation
 
-### [How Do DiTs Denoise? An Aggregator-Predictor View of Attention and MLPs](https://arxiv.org/abs/2610.29854v1)
-- id: `http://arxiv.org/abs/2610.29854v1`
-- published: 2026-10-21
-- authors: Gyeonghun Kang, William Xingxu Chen, Xiang Cheng
-- categories: cs.CV, stat.ML
+### [SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing](https://arxiv.org/abs/2610.31659v1)
+- id: `http://arxiv.org/abs/2610.31659v1`
+- published: 2026-10-22
+- authors: Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe, Huy Nghiem, Yongkyun Lee, Andrew Adams Schoen, Furong Huang
+- categories: cs.CV, cs.LG
 - query: `all:"adapter" AND all:"transformer"`
 - blume_score: 1
 
-How do diffusion transformers (DiTs) represent image content and learn rules for reusing it to
-generalize? We develop an aggregator--predictor view of DiTs as input-adaptive local denoisers, in
-which context aggregation and patch prediction provide functional roles for interpreting attention
-and MLPs. We first establish that, for Gaussian Markov random field (GMRF) priors, the global Bayes
-denoiser can be approximated using only a subset of context patches, with error decaying
-exponentially i...
+Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is
+difficult: a model can absorb collection-level visual characteristics without reproducing training
+images. Proactive dataset-use auditing plants a shared signal in a dataset before release, then
+later checks whether that signal appears in a suspect model's generated outputs. Existing approaches
+often trade off verifiability, fidelity, robustness, and deployability. We introduce
+$\textbf{SpectralCan...
+
+### [METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning](https://arxiv.org/abs/2610.31656v1)
+- id: `http://arxiv.org/abs/2610.31656v1`
+- published: 2026-10-22
+- authors: Ali Najar, Hosein Hasani, Amir Kooshan Fattah, Yasamin Rajabi, Mahdieh Soleymani Baghshah
+- categories: cs.LG, cs.AI
+- query: `all:"adapter" AND all:"transformer"`
+- blume_score: 1
+
+Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited
+interaction, but this requires representing task evidence over long interaction histories. Classical
+recurrent agents compress experience into hidden states, while transformer-based agents retrieve
+from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-
+Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast
+adaptation ...
 
 
 ## Retrieval Rag
 
-### [Code Comprehensor: Hierarchical Documentation and Cross-Modal Retrieval for Large Repositories](https://arxiv.org/abs/2610.30016v1)
-- id: `http://arxiv.org/abs/2610.30016v1`
-- published: 2026-10-21
-- authors: Sujoy Roychowdhury, Joseph H. R. Isaac, Jiangning Gao, Martin Klitte, Diarmuid Corcoran
-- categories: cs.SE, cs.AI, cs.LG
-- query: `all:"hybrid retrieval"`
-- blume_score: 2
-
-Understanding large, complex, and rapidly evolving code bases remains a core challenge for software
-engineering at scale, hindering onboarding, maintenance, refactoring, and impact analysis. Providing
-this information to a Large-Language Model (LLM) is another hurdle, as the LLM must understand not
-only the required code method but also its associated methods in the grand scheme of the repository.
-We propose Code Comprehensor, a hybrid retrieval-reasoning framework combining (i) a code depend...
-
-### [Graph Topology Meets Energy-Driven Pathfinding: Preserving Contextual Consistency in Retrieval-Augmented Generation](https://arxiv.org/abs/2610.29933v1)
-- id: `http://arxiv.org/abs/2610.29933v1`
-- published: 2026-10-21
-- authors: Yufeng Li, Zaijing Li, Fuchen Zhang, Zongzong Wu, Ming Zhao, Fengxiao Tang
+### [How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions](https://arxiv.org/abs/2610.31606v1)
+- id: `http://arxiv.org/abs/2610.31606v1`
+- published: 2026-10-22
+- authors: Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias, Thaís Gaudêncio, Yuri Malheiros, Barufaldi
 - categories: cs.CL, cs.AI
 - query: `all:"retrieval augmented generation"`
-- blume_score: 3
+- blume_score: 2
 
-Retrieval-augmented generation (RAG) frequently integrates knowledge graphs (KGs) for complex multi-
-hop question answering. However, their performance is increasingly bottlenecked by the knowledge
-structuring and reasoning processes. (i) Severe semantic loss: Distilling continuous texts into
-discrete symbols strips away contextual nuances and narrative coherence. (ii) Pronounced modality
-mismatch: Fragmented graph structures clash with the continuous texts LLMs are pre-trained on, while
-rewri...
+Purpose: To describe an evidence-aware retrieval evaluation protocol for a clinical retrieval-
+augmented generation (RAG) system over breast lesion management literature, addressing the
+dependence of retrieval scores on annotation coverage. Methods: An 18-document corpus and an
+18-query development benchmark, with one Yes/No or WH-question per document, were used. Retrieval
+combined dense embeddings, BM25, and cross-encoder reranking. Chunk sizes of 128 to 1024 tokens,
+overlaps of 0 to 20%, an...
+
+### [From Structured Records to Patient Narratives: Preserving Clinical Alignment in LLM-Generated Health Summaries](https://arxiv.org/abs/2610.31467v1)
+- id: `http://arxiv.org/abs/2610.31467v1`
+- published: 2026-10-22
+- authors: Bayram Ayadi, Florian Geissler, Johanna Schmidhuber
+- categories: cs.CL
+- query: `all:"retrieval augmented generation"`
+- blume_score: 2
+
+As wearable and digital health systems increasingly generate longitudinal physiological records,
+communicating these observations in patient-accessible language remains a significant challenge.
+Large Language Models (LLMs) offer a promising mechanism for translating structured clinical
+information into readable narratives, but this process may introduce semantic drift, where
+clinically precise meaning is distorted during simplification. We investigate evidence-grounded
+health summarization fo...
 
